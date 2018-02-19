@@ -61,28 +61,3 @@ var updateTitleTag = function() {
     console.log('title')
     document.title = CONFIG.copy.artistName + " | Toronto Based Artist";
 }
-CONFIG.copy._updateHomepageCopy = function() {
-    CONFIG.copy.artistFname ? 
-        $('.j_fname').text('About ' + CONFIG.copy.artistFname): null;
-    CONFIG.copy.artistCategories ? 
-        $('.j_artistCategories').text(CONFIG.copy.artistCategories): null;
-    CONFIG.copy.artistHeadline ? 
-        $('.j_artistHeadline').text(CONFIG.copy.artistHeadline): null;
-    CONFIG.copy.artistAboutBlurb ? 
-        $('.j_artistAboutBlurb').html(CONFIG.copy.artistAboutBlurb): null;
-}
-
-
-
-CONFIG.copy._headerFooterComponents = function() {
-    CONFIG.copy.artistName ? 
-        $('.j_artistName').text(CONFIG.copy.artistName): null;
-    CONFIG.copy.artistName ? 
-        $('.j_footerCopyright').text(CONFIG.copy.artistName + ' | Copyright 2018.'): null;
-    CONFIG.socialMedia.ig ?
-        $('.j_igUrl').attr('href', CONFIG.socialMedia.ig) : null;   
-    CONFIG.socialMedia.fb ?
-        $('.j_fbUrl').attr('href', CONFIG.socialMedia.fb) : null;   
-    CONFIG.socialMedia.twitter ?
-        $('.j_twitterUrl').attr('href', CONFIG.socialMedia.twitter) : null;   
-}
