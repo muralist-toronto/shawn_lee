@@ -17,7 +17,8 @@
         margin-left: 0.25%;
         margin-right: 0.25%;
         margin-bottom: 7px;
-        max-height: 375px;
+        max-height: 16.5em;
+        margin-bottom: 15px;
     }
 }
 
@@ -120,4 +121,10 @@
         }
     }
 
+}
+
+@media(max-width: 1199px) {
+    #home #portfoliolist .portfolio {
+        max-height: 14em;
+    } 
 }

@@ -13,7 +13,7 @@
 
     // All Functions
     function getArtistsPosts() {
-        if(CONFIG.baseUrl){
+        if(CONFIG.uid){
             baseUrl = CONFIG.baseUrl;
 
             $.get(baseUrl + '/getArtistsPosts?uid=' + userUid,function(data, status) {
@@ -38,7 +38,7 @@
             ];
 
             let postHTML = '<div class="portfolio all ' + post.category + '" data-cat="logo">' +
-                '<a href="/portfolio?id=' + key + '" class="portfolio-wrapper">' +
+                '<a href="' + CONFIG.subdomain + '/portfolio?id=' + key + '" class="portfolio-wrapper">' +
                     '<img src="' + postImgUrl + '" alt="" />' +
                 '</a>' +
             '</div>';
